@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+    <title>Minhas Consultas | Organizador Médico</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+
+    <style>
+         /*CSS entra aqui na próxima aula */
+    </style>
+</head>
+
+<body>
+    <header class="topo">
+        <div class="logo">⚕️ Bem-estar </div>
+        <nav aria-label="principal">
+            <a href="#proximas">Próximas Consultas</a>
+            <a href="#historico">Histórico de Consultas</a>
+            <a href="anexos">Anexos</a>
+            <a href="#midias">Mídias</a>
+        </nav>
+    </header>
+    <main>
+        <section class="saudacao">
+            <h1>Olá, dona Lúcia! </h1>
+            <p>Você tem <strong>2 consultas</strong> nessa semana.</p>
+        </section>
+
+        <section id="proximas">
+            <h2>Próximas Consultas</h2>
+
+            <article class="consulta">
+                <h3>Dra. Mariana Couto - Cardiologia</h3>
+                <time datetime="2026-07-08T16:45">Quarta-feira, 8 de julho de 2026 às 16:45</time>
+                <p>Hospital São Lucas | Sala 466</p>
+                <p class="lembrete">Lembrar de levar exames</p>
+            </article>
+            <br>
+            <article class="consulta">
+                <h3>Dra. Couto - Hematologia </h3>
+                <time datetime="2026-07-10T07:45">Sexta-feira, 10 de julho de 2026 às 07:45</time>
+                <p>Hospital São Lucas | Sala 04</p>
+                <p class="lembrete">Lembrar de levar exames de sangue</p>
+            </article>
+        </section>
+        <br>
+        <!-- HISTÓRICO -->
+         <section id="historico" aria-labelledby="t-historico">
+            <h2 id="t-historico">Histórico de Consultas</h2>
+            <table>
+                <caption>Consultas realizadas</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">data</th>
+                        <th scope="col">Profissional</th>
+                        <th scope="col">Observações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10/06/2026</td>
+                        <td>Dra. Mariana Couto</td>
+                        <td>Consulta de rotina</td>
+                    </tr>
+                    <tr>
+                        <td>15/06/2026</td>
+                        <td>Dra. Ana Paula Silva</td>
+                        <td>Retorno de exames</td>
+                    </tr>
+                </tbody>
+            </table>
+         </section>
+
+         <section id="anexos" aria-labelledby="t-anexos">
+            <h2 id="t-anexos">Exames anexados</h2>
+
+            <ul class="anexos">
+                <li>🗒️ Hemograma - 02/04/2026</li>
+                <li>🗒️ Eletrocardiograma - 14/03/2026</li>
+                <li>🗒️ Raio-X - 28/01/2026</li>
+            </ul>
+
+            <button type="button">+ Anexar novo exame</button>
+          </section>
+          
+         <section id="midias" aria-labelledby="t-midias">
+            <h2 id="t-midias">Galeria de Mídias</h2>
+            <h3>Imagens Informativas</h3>
+            <p>
+                <img
+                    src="imagens/logo.png.avif"
+                    alt="Imagem que define a fachada da clínica"
+                    width="300"
+                    height="200"/>
+
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1673953509975-576678fa6710?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Imagem de um estetoscópio médico"
+                    width="300"
+                    height="200"/>
+            </p>
+            
+            <h3>Instruções em vídeo</h3>
+            <h4>Como chegar à nossa unidade</h4>
+            <video controls width="400">
+                <source src="videos/video.mp4"  type="video/mp4"/>
+                Seu navegador não suporta a reprodução do vídeo.
+            </video>
+
+            <h4>Orientações gerais de saúde</h4>
+            <video controls width="400">
+                <source src="https://cdn.pixabay.com/video/2019/02/23/21617-319452308_large.mp4"
+                type="video/mp4"/>
+
+                Seu navegador não suporta a reprodução do vídeo.
+            </video>
+
+            <h4>Orientações vindas do Youtube sobre saúde</h4>
+            <iframe
+                width="400"
+                height="325"
+                src="https://www.youtube.com/embed/GP9lfelJb9c?si=E2lvtrrdxxok0CsD"
+                title="Orientções do Drauzip Varella"
+                allowfullscreen></iframe>
+
+            <h3>Intruções em Áudio</h3>
+
+            <h4>Mensagem de boas-vindas</h4>
+            <p>
+                <audio controls>
+                    <source src="audios/audio.mp3" type="audio/mpeg"/>
+
+                    Seu navegador não suporta a reprodução do áudio.
+                </audio>
+
+
+                 <h4>Podcast</h4>
+           <p>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg"/>
+
+                    Seu navegador não suporta a reprodução do áudio.
+                </audio>
+            </p>
+            </section> 
+
+            <section aria-labelledby="t-prefs">
+                <h2 id="t-prefs">Receber lembretes por e-mail</h2>
+
+                <form
+                    action="mailto:lembretes@bemestar.app"
+                    method="post"
+                    enctype="text/plain">
+                    <p>
+                        <label for="email">Seu e-mail</label> <br>
+
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            required
+                            placeholder="voce@exemplo.com"/>
+                    </p>
+
+                    <p>
+                        <label for="quando">Quando avisar</label> <br>
+
+                        <select id="quando" name="quando">
+                            <option>24h antes</option>
+                            <option>2h antes</option>
+                            <option>No dia anterior</option>
+                        </select>
+                    </p>
+
+                    <button type="submit">Quero receber lembretes</button>
+                </form>
+            </section>
+    </main>
+    <footer>
+        <p>Feito com amor para cuidar de você 😊👌</p>
+    </footer>
+</body>
+</html>
